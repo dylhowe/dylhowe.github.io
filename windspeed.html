@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style> body{ background-color:#eff0f2 }</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand"><span class="glyphicon glyphicon-globe"></span></a>
+          </div>
+    
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+<!-- needs better dropdown!-->
+
+            <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="temp.html">Max Temperature</a></li>
+                    <li class="active"><a href="windspeed.html">Wind Speed</a></li>
+                    <li><a href="humidity.html">Humidity</a></li>
+                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                    </ul>
+                </li>
+
+
+              <li><a href="Comparison.html">Comparison</a></li>
+              <li><a href="Data.html">Data</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container" style="background-color: #eff0f2">
+        <div xlass="row">
+            <div class="col-md-7 col-sm-12 main-plot">
+                <h1> Latitude vs. Wind Speed </h1>
+                <br>
+                
+                    <img src="wind.png" class="mainpic pull-left">
+     
+                
+                        <p>
+                          Interestingly, wind speeds look to be lower the closer a location is to the equator. The northern hemisphere seems to have many more instances of high wind speeds than the souther hemisphere did when the analysis was done.  
+    
+                        </p>
+                        
+               
+            </div>
+            <div class="col-md-4 col-sm-12 col-md-offset-1 side-plots">
+                <h2>
+                  Visualizations
+                </h2>
+                <br>
+                <div class="col-md-6 col-sm-3">
+                        <a href="temp.html">
+                        <h5> Vs. Temperature</h3>
+                        <img src="temp.png" class="thumb"> 
+                        </a>
+                </div>
+                <div class="col-md-6 col-sm-3">
+                        <a href="cloudiness.html">
+                        <h5> Vs. Cloudiness</h3>
+                        <img src="cloud.png" class="thumb"> 
+                        </a>
+                </div>
+                <div class="col-md-6 col-sm-3">
+                        <a href="humidity.html">
+                        <h5> Vs. Humidity</h3>
+                        <img src="humid.png" class="thumb"> 
+                        </a>
+                </div>
+                <div class="col-md-6 col-sm-3">
+                        <a href="windspeed.html">
+                        <h5> Vs Wind Speed</h3>
+                        <img src="wind.png" class="thumb"> 
+                        </a>
+                      
+                </div>
+            </div>
+        </div>
+        </div>
+    
+    </body>
+      
